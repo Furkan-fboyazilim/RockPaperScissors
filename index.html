@@ -1,1 +1,47 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Taş Kağıt Makas</h1>
+        <div class="scoreContainer">
+            <div class="scoreBoard">
+                <p class="scoreName">Bilgisayar</p>
+                <p id="computer-point" class="point">0</p>
+            </div>
+            <div class="scoreBoard">
+                <p class="scoreName">Kullanıcı</p>
+                <p id="user-point" class="point">0</p>
+            </div>
+        </div>
+        <div class="gameContainer">
+            <div class="boxButton">
+                <button class="btnChoice" type="button" key="tas"><i class="fa fa-certificate"
+                        aria-hidden="true"></i>Taş</button>
+                <button class="btnChoice" type="button" key="kagit"><i class="fa fa-file-text-o"
+                        aria-hidden="true"></i>Kağıt</button>
+                <button class="btnChoice" type="button" key="makas"><i class="fa fa-scissors"
+                        aria-hidden="true"></i>Makas</button>
+            </div>
+
+            <div class="boxInfo">
+                <p id="user-choice">Senin seçimin: -</p>
+                <p id="computer-choice">Bilgisayarın seçimi: -</p>
+                <p id="game-result">Sonuç: -</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+
+Skor tutulacak Bilgisayar ve kullacı çin skor board olacak
+
+Oyun içinde geri sayımlı süre olacak
+
+oyun oynanacak ver tekrar bir kaç saniye sonra başlanacak
+
+yeşil sarı ve kırmızı olarak sonuca göre renklendşrme olacak
+
+animasyon kullanılacak
