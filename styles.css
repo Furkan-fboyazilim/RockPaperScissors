@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   margin: 0;
   padding: 0;
   display: flex;
@@ -8,26 +8,42 @@ body {
   align-items: center;
   height: 100vh;
 }
-
+#title {
+  color: #526477;
+}
+.container {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(32, 9, 160, 0.2);
+  height: 70vh;
+}
 h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
-
-.container {
+.timeContainer {
   text-align: center;
-  background: #f7f7f2;
-  padding: 20px;
+  background: #ffffff;
+  padding: 2px;
+  margin-inline: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(32, 9, 160, 0.2);
 }
+#timeCount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f63be;
+}
+
 .gameContainer {
   text-align: center;
   background: #ffffff;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(32, 9, 160, 0.2);
 }
 .scoreContainer {
   text-align: center;
@@ -35,20 +51,18 @@ h1 {
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(32, 9, 160, 0.2);
   display: flex;
   justify-content: space-around;
 }
-.scoreBoard {
-}
-
 .point {
   font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(32, 9, 160, 0.2);
 }
 .boxButton {
   display: flex;
@@ -61,21 +75,53 @@ h1 {
   padding: 10px 20px;
   margin: 10px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #0f63be;
   color: white;
   transition: background-color 0.5s;
 }
 
 .btnChoice:hover {
-  background-color: #0056b3;
+  background-color: #0f63be;
+}
+.btnChoice:disabled {
+  background-color: #788591;
 }
 .btnChoice i {
   padding-right: 5px;
 }
+.resultContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.resultName {
+}
+.choiceResult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(20, 2, 121, 0.2);
+}
+.scoreName {
+  font-size: 16px;
+  font-weight: 600;
+}
+.winStyle {
+  color: green;
+  margin: 10px 0;
+  font-size: 18px;
+}
 
-.boxInfo p {
+.lostStyle {
+  color: red;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.drawStyle {
+  color: orange;
   margin: 10px 0;
   font-size: 18px;
 }

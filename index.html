@@ -10,31 +10,49 @@
 <body>
 
     <div class="container">
-        <h1>Taş Kağıt Makas</h1>
-        <div class="scoreContainer">
-            <div class="scoreBoard">
-                <p class="scoreName">Bilgisayar</p>
-                <p id="computer-point" class="point">0</p>
-            </div>
-            <div class="scoreBoard">
-                <p class="scoreName">Kullanıcı</p>
-                <p id="user-point" class="point">0</p>
-            </div>
+        <h1 id="title">Taş Kağıt Makas</h1>
+        <div id="finish" style="display: none;">
+            <p id="finishGameResult">OYUN SONUCU</p>
+            <button onclick="restartGame()">Tekrar Başla</button>
         </div>
-        <div class="gameContainer">
-            <div class="boxButton">
-                <button class="btnChoice" type="button" key="tas"><i class="fa fa-certificate"
-                        aria-hidden="true"></i>Taş</button>
-                <button class="btnChoice" type="button" key="kagit"><i class="fa fa-file-text-o"
-                        aria-hidden="true"></i>Kağıt</button>
-                <button class="btnChoice" type="button" key="makas"><i class="fa fa-scissors"
-                        aria-hidden="true"></i>Makas</button>
+        <div id="game">
+            <div class="timeContainer">
+                <p id="timeCount">Kalan Zaman</p>
             </div>
+            <div class="scoreContainer">
+                <div class="scoreBoard">
+                    <p class="scoreName">Bilgisayar</p>
+                    <p id="computer-point" class="point">0</p>
+                </div>
+                <div class="scoreBoard">
+                    <p class="scoreName">Kullanıcı</p>
+                    <p id="user-point" class="point">0</p>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="boxButton">
+                    <button class="btnChoice" type="button" key="Taş"><i class="fa fa-certificate"
+                            aria-hidden="true"></i>Taş</button>
+                    <button class="btnChoice" type="button" key="Kağıt"><i class="fa fa-file-text-o"
+                            aria-hidden="true"></i>Kağıt</button>
+                    <button class="btnChoice" type="button" key="Makas"><i class="fa fa-scissors"
+                            aria-hidden="true"></i>Makas</button>
+                </div>
 
-            <div class="boxInfo">
-                <p id="user-choice">Senin seçimin: -</p>
-                <p id="computer-choice">Bilgisayarın seçimi: -</p>
-                <p id="game-result">Sonuç: -</p>
+                <div class="boxInfo">
+                    <div class="resultContainer">
+                        <div class="resultBoard">
+                            <p class="resultName">Senin Seçimin</p>
+                            <p id="user-choice" class="choiceResult">-</p>
+                        </div>
+                        <div class="resultBoard">
+                            <p class="resultName">Bilgisayar seçimi</p>
+                            <p id="computer-choice" class="choiceResult">-</p>
+                        </div>
+                    </div>
+
+                    <p id="game-result"></p>
+                </div>
             </div>
         </div>
     </div>
